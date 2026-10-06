@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Engineering Log | Developer Portfolio 2.0</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">Dev<span>Portfolio</span></a>
+      <nav class="nav-menu" id="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About Me</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="journal.html" class="nav-link">Weekly Journal</a>
+        <a href="skills.html" class="nav-link">Skills</a>
+        <a href="ai-log.html" class="nav-link">AI Engineering Log</a>
+      </nav>
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">🌙</button>
+        <button id="hamburger-btn" class="hamburger" aria-label="Toggle Navigation Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1 class="section-title">AI Engineering Log</h1>
+    <p class="section-subtitle">Documenting how AI assistance was leveraged during the redesign and implementation of Portfolio 2.0.</p>
+
+    <!-- Part 11: Documented Log Table -->
+    <div class="log-table-wrapper">
+      <table class="log-table">
+        <thead>
+          <tr>
+            <th>What I Asked</th>
+            <th>Why I Asked</th>
+            <th>What Did AI Give Me?</th>
+            <th>What Did I Change?</th>
+            <th>Did It Work?</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>"How do I set up CSS custom variables to handle a clean dark/light mode toggle with smooth transitions?"</td>
+            <td>To implement Part 3 requirements across all pages cleanly without duplicated CSS rules.</td>
+            <td>A CSS snippet defining <code>:root</code> and <code>[data-theme="dark"]</code> color variables.</td>
+            <td>Adjusted exact color hex codes to ensure background-to-text contrast complied with accessibility guidelines.</td>
+            <td>Yes, worked immediately when paired with JS switching the <code>data-theme</code> attribute on the <code>&lt;html&gt;</code> element.</td>
+          </tr>
+          <tr>
+            <td>"How do I filter project cards in vanilla JS using data attributes without reloading the page?"</td>
+            <td>To implement Part 5 project filtering capability.</td>
+            <td>A script iterating over cards with <code>querySelectorAll</code> and applying <code>display: none</code> via CSS classes.</td>
+            <td>Modified filtering logic to handle multiple tags per project by splitting class strings in <code>data-category</code>.</td>
+            <td>Yes, verified through user testing that clicking tags correctly hides and shows cards instantly.</td>
+          </tr>
+          <tr>
+            <td>"How do I build an accessible modal pop-up in plain JavaScript and CSS?"</td>
+            <td>To satisfy Option A of Part 6 (Interactive Project Feature).</td>
+            <td>A modal skeleton with backdrop positioning, visibility classes, and a close event listener.</td>
+            <td>Added keyboard navigation handlers (pressing Escape key) and disabled background scrolling when open.</td>
+            <td>Yes, tested across mobile and desktop viewports smoothly.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Akshaya Palukuru. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

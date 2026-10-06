@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weekly Journal | Developer Portfolio 2.0</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">Dev<span>Portfolio</span></a>
+      <nav class="nav-menu" id="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About Me</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="journal.html" class="nav-link">Weekly Journal</a>
+        <a href="skills.html" class="nav-link">Skills</a>
+        <a href="ai-log.html" class="nav-link">AI Engineering Log</a>
+      </nav>
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">🌙</button>
+        <button id="hamburger-btn" class="hamburger" aria-label="Toggle Navigation Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    <h1 class="section-title">Weekly Learning Journal</h1>
+    <p class="section-subtitle">A weekly record of my technical growth, challenges solved, and development milestones.</p>
+
+    <!-- Journal Feed -->
+    <div class="journal-feed">
+
+      <!-- Week 2 Entry -->
+      <article class="journal-card">
+        <div class="journal-header">
+          <span class="tag">Week 2</span>
+          <span class="journal-date">October 5, 2026</span>
+        </div>
+        <h2 class="journal-title">Refactoring Portfolio 2.0 & Interactive UI Modals</h2>
+        <p class="journal-excerpt">
+          Focused heavily on user experience and responsive design this week. Rebuilt the navigation system to support theme switching and mobile hamburger menus.
+        </p>
+        <div class="journal-details">
+          <h4>Highlights & Wins</h4>
+          <ul>
+            <li>Implemented dynamic project filtering using custom JavaScript data attributes.</li>
+            <li>Created an accessible modal window for detailed project previews without external libraries.</li>
+            <li>Configured `localStorage` to persist theme choices across sessions.</li>
+          </ul>
+          <h4 style="margin-top: 1rem;">Key Takeaway</h4>
+          <p>Writing clean, semantic HTML and CSS variables makes theme toggling much simpler than relying on heavy third-party UI frameworks.</p>
+        </div>
+      </article>
+
+      <!-- Week 1 Entry -->
+      <article class="journal-card">
+        <div class="journal-header">
+          <span class="tag">Week 1</span>
+          <span class="journal-date">September 28, 2026</span>
+        </div>
+        <h2 class="journal-title">Setting Up Architecture & Version Control</h2>
+        <p class="journal-excerpt">
+          Kicked off the portfolio overhaul by wireframing layouts and establishing a clean file structure for multi-page routing.
+        </p>
+        <div class="journal-details">
+          <h4>Highlights & Wins</h4>
+          <ul>
+            <li>Established clean project directory structure and base CSS reset stylesheet.</li>
+            <li>Created the core GitHub repository and set up a systematic commit workflow.</li>
+            <li>Drafted low-fidelity desktop and mobile wireframes before writing code.</li>
+          </ul>
+          <h4 style="margin-top: 1rem;">Key Takeaway</h4>
+          <p>Planning out layout grids and CSS variables before writing styles prevents tons of code duplication later on.</p>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Alex Rivera. Built with HTML, CSS, & JavaScript.</p>
+    </div>
+  </footer>
+
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

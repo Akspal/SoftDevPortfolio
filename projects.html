@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Developer Portfolio 2.0</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">Dev<span>Portfolio</span></a>
+      <nav class="nav-menu" id="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About Me</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="journal.html" class="nav-link">Weekly Journal</a>
+        <a href="skills.html" class="nav-link">Skills</a>
+        <a href="ai-log.html" class="nav-link">AI Engineering Log</a>
+      </nav>
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">🌙</button>
+        <button id="hamburger-btn" class="hamburger" aria-label="Toggle Navigation Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1 class="section-title">Projects</h1>
+    <p class="section-subtitle">Explore my work across frontend development, utilities, and software engineering assignments.</p>
+
+    <!-- Part 5: Project Filtering Buttons -->
+    <div class="filter-container">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="javascript">JavaScript</button>
+      <button class="filter-btn" data-filter="java">Java</button>
+      <button class="filter-btn" data-filter="web">Web</button>
+    </div>
+
+    <!-- Part 4: Project Cards Grid -->
+    <div class="projects-grid">
+
+      <!-- Card 1 -->
+      <article class="project-card" 
+               data-category="javascript web"
+               data-title="Interactive Task Dashboard"
+               data-image="https://via.placeholder.com/600x400/2563eb/ffffff?text=Task+Dashboard"
+               data-full-desc="A full-featured client-side task manager allowing users to categorize tasks, mark completions, set priorities, and keep data persisted through local browser storage."
+               data-learned="Gained mastery over DOM manipulation, array higher-order methods (filter, map), and localStorage synchronization."
+               data-github="https://github.com"
+               data-live="https://example.com">
+        <img src="https://via.placeholder.com/400x200/2563eb/ffffff?text=Task+Dashboard" alt="Task Dashboard Preview" class="project-img">
+        <div class="project-body">
+          <h3 class="project-title">Interactive Task Dashboard</h3>
+          <p class="project-desc">Client-side application for task management with priority filtering and persistent storage.</p>
+          <div class="project-tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">HTML5/CSS3</span>
+            <span class="tag">Web</span>
+          </div>
+          <div class="project-links">
+            <button class="btn btn-outline btn-sm open-modal-btn">Details</button>
+            <a href="https://github.com" target="_blank" class="btn btn-primary btn-sm">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="project-card" 
+               data-category="java"
+               data-title="Banking Account Console App"
+               data-image="https://via.placeholder.com/600x400/1e293b/ffffff?text=Java+Banking+App"
+               data-full-desc="Object-oriented Java application handling standard bank transactions, user account generation, balance auditing, and interest calculation."
+               data-learned="Strengthened understanding of Java OOP concepts including inheritance, polymorphism, encapsulation, and custom exception handling."
+               data-github="https://github.com"
+               data-live="#">
+        <img src="https://via.placeholder.com/400x200/1e293b/ffffff?text=Java+Banking+App" alt="Java App Preview" class="project-img">
+        <div class="project-body">
+          <h3 class="project-title">Banking Account Console</h3>
+          <p class="project-desc">Java console application demonstrating object-oriented program architecture.</p>
+          <div class="project-tags">
+            <span class="tag">Java</span>
+            <span class="tag">OOP</span>
+          </div>
+          <div class="project-links">
+            <button class="btn btn-outline btn-sm open-modal-btn">Details</button>
+            <a href="https://github.com" target="_blank" class="btn btn-primary btn-sm">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="project-card" 
+               data-category="javascript web"
+               data-title="Live Weather Widget App"
+               data-image="https://via.placeholder.com/600x400/0284c7/ffffff?text=Weather+App"
+               data-full-desc="A dynamic weather application using modern async JavaScript to query third-party REST APIs and render real-time meteorological forecasts."
+               data-learned="Implemented asynchronous JavaScript (Promises, async/await), error handling for network requests, and dynamic UI updates."
+               data-github="https://github.com"
+               data-live="https://example.com">
+        <img src="https://via.placeholder.com/400x200/0284c7/ffffff?text=Weather+App" alt="Weather App Preview" class="project-img">
+        <div class="project-body">
+          <h3 class="project-title">Live Weather Widget App</h3>
+          <p class="project-desc">Queries third-party REST weather APIs to deliver real-time environmental metrics.</p>
+          <div class="project-tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">REST API</span>
+            <span class="tag">Web</span>
+          </div>
+          <div class="project-links">
+            <button class="btn btn-outline btn-sm open-modal-btn">Details</button>
+            <a href="https://github.com" target="_blank" class="btn btn-primary btn-sm">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <!-- Part 6: Interactive Modal Component (Option A) -->
+  <div id="project-modal" class="modal-backdrop" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-labelledby="modal-title">
+      <button id="modal-close-btn" class="modal-close" aria-label="Close modal">&times;</button>
+      <h3 id="modal-title" class="modal-title">Project Title</h3>
+      <img id="modal-image" src="" alt="" style="width: 100%; border-radius: var(--radius); margin-bottom: 1rem;">
+      
+      <div class="modal-section">
+        <h4>Overview</h4>
+        <p id="modal-description"></p>
+      </div>
+
+      <div class="modal-section">
+        <h4>What I Learned</h4>
+        <p id="modal-learned"></p>
+      </div>
+
+      <div class="modal-section" style="margin-top: 1.5rem; display: flex; gap: 1rem;">
+        <a id="modal-github" href="#" target="_blank" class="btn btn-primary">GitHub Repository</a>
+        <a id="modal-live" href="#" target="_blank" class="btn btn-outline">Live Demo</a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Akshaya Palukuru. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="js/main.js"></script>
+  <script src="js/projects.js"></script>
+</body>
+</html>
